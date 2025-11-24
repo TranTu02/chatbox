@@ -122,8 +122,8 @@ const ChatInput = ({ onSetReply, classifierCode, onClassifierCodeChange, onSetFi
 				message: message
 			};
 			
-			// Add classifierCode if selected
-			if (classifierCode) {
+			// Add classifierCode only if it's NOT "tra_cuu_thong_tin" (default lookup mode doesn't need classifier)
+			if (classifierCode && classifierCode !== 'tra_cuu_thong_tin') {
 				payload.classifierCode = classifierCode;
 				console.log('🏷️ Including classifierCode:', classifierCode);
 			}

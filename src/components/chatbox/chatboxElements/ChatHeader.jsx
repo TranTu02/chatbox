@@ -101,6 +101,7 @@ Error: ${info.error ? JSON.stringify(info.error) : 'None'}`);
 								>
 									<option value="">💬 Tra cứu thông tin</option>
 									<option value="PROTOCOL_DOCUMENT">📋 Trích xuất phương pháp</option>
+									<option value = "PHIEU_GUI_MAU">🧾 Trích xuất phiếu gửi mẫu</option>
 								</select>
 							</label>
 						</div>
